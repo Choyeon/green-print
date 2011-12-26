@@ -22,12 +22,12 @@ def commit():
 
 
 def set_sys_time(month, day, year):
+    print('sudo date %02d%02d1200%04d' % (month, day, year))
     os.system('sudo date %02d%02d1200%04d' % (month, day, year))
 
 
 def trick_commit(year, month, day):
     set_sys_time(month, day, year)
-    print(year, month, day)
     modify()
     commit()
 
