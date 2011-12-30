@@ -26,7 +26,7 @@ def set_sys_time(year, month, day):
 
 
 def trick_commit(year, month, day):
-    set_sys_time(year, month, day)
+    set_sys_time(month, day, year)
     modify()
     commit()
 
