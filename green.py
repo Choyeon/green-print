@@ -34,7 +34,7 @@ def trick_commit(year, month, day):
 def daily_commit(start_date, end_date):
     for i in range((end_date - start_date).days + 1):
         cur_date = start_date + datetime.timedelta(days=i)
-        trick_commit(cur_date.year, cur_date.month, cur_date.day)
+        trick_commit(cur_date.month, cur_date.day, cur_date.year)
 
 
 if __name__ == '__main__':
