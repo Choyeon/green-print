@@ -1,6 +1,7 @@
 import datetime
 import os
 
+
 # from heavy import special_commit
 
 
@@ -21,7 +22,7 @@ def commit():
 
 
 def set_sys_time(year, month, day):
-    os.system('sudo date  %04d%02d%02d' % (month,day,year))
+    os.system('sudo date  %04d%02d%02d' % (month, day, year))
 
 
 def trick_commit(year, month, day):
