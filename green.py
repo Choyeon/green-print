@@ -21,7 +21,7 @@ def commit():
     os.system('git commit -a -m test_github_streak > /dev/null 2>&1')
 
 
-def set_sys_time(year, month, day):
+def set_sys_time(month, day, year):
     os.system('sudo date  %04d%02d%02d' % (month, day, year))
 
 
@@ -38,4 +38,4 @@ def daily_commit(start_date, end_date):
 
 
 if __name__ == '__main__':
-    daily_commit(datetime.date(2018, 12, 30), datetime.date(2020, 1, 28))
+    daily_commit(datetime.date(209, 12, 30), datetime.date(2020, 1, 28))
